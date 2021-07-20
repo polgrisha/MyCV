@@ -1,0 +1,217 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage{helvet}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{textcomp}
+\usepackage{tikz}
+    
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=black,
+}
+
+\addtolength{\textwidth}{100pt}
+\addtolength{\textheight}{100pt}
+\addtolength{\oddsidemargin}{-50pt}
+\addtolength{\evensidemargin}{-50pt}
+\addtolength{\topmargin}{-50pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+    }
+}
+
+\definecolor{capri}{rgb}{0.0, 0.75, 1.0}
+
+%--------------- SECTION FORMATTING ---------------
+
+\titleformat{\section}
+{
+\vspace{-8pt}\scshape\raggedright\Large
+}
+{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+%--------------- CV ---------------
+
+\begin{document}
+
+%--------------- HEADING ---------------
+
+\begin{center}
+{\huge \sc \textbf{Gregory Polyakov}}
+\end{center}
+
+\vspace{10pt}
+
+{\large \faEnvelopeO ~\texttt{polyakov.ga@phystech.edu} \\
+\vspace{2pt}
+{\color{capri} \faPaperPlaneO}~\href{https://t.me/polgrisha}{\texttt{@polgrisha}} \\
+\vspace{2pt}
+\faGithub ~\href{https://github.com/polgrisha}{\texttt{polgrisha}}} \\
+    
+\vspace{10pt}
+
+%--------------- SUMMARY ---------------
+\section{Summary}
+
+BS student interested in machine learning (deep learning, Bayesian methods, NLP, generative models). Completed university courses in mathematics and computer science and participated in several data science  competitions.
+
+%--------------- EDUCATION ---------------
+\section{Education}
+
+{\large \textbf{Moscow Institute of Physics and Technology}} \hfill \textsl{Moscow, Russia} \\
+{\small \textsl{BS in Applied Mathematics and Computer Science}} \hfill \textsl{Sep 2017 - Jun 2021} \\
+
+\vspace{4pt}
+
+{\textbf{Relevant courses:}} \\
+\begin{addmargin}[0em]{10em}
+    \begin{itemize}
+        \setlength\itemsep{-2pt}
+        \item Analysis, Algebra, Probability Theory and Mathematical Statistics, Differential Equations
+        \item Combinatorics, Graph Theory, Discrete Analysis, Computational Complexity 
+        \item Algorithms and Data Structures, Computer Architecture and Operating Systems, 
+        \item Applied Statistics, Machine Learning, Optimization Methods, Bayesian Methods
+        \item Deep Learning, Reinforcement Learning, NLP
+    \end{itemize}{}
+\end{addmargin}
+
+\vspace{6pt}
+
+{\large \textbf{School \textnumero 1514}} \hfill \textsl{Moscow, Russia} \\
+{\small \textsl{Secondary school}} \hfill \textsl{Sep 2010 - Jun 2017} \\
+
+\vspace{4pt}
+
+\begin{addmargin}[0em]{10em}
+    \begin{itemize}
+        \setlength\itemsep{-2pt}
+        \item Prize-winning prestigious competitions in mathematics and physics
+        \item Full score on informatics Unified State Exam
+    \end{itemize}{}
+\end{addmargin}
+
+\vspace{6pt}
+
+\begin{comment}
+%--------------- WORK EXPERIENCE ---------------
+\section{Work experience}
+
+{\large \textbf{SmartDec} \hspace{-4pt} \href{https://smartdec.net}{\color{blue}\ExternalLink}} \hfill \textsl{Moscow, Russia} \\
+{\small \textsl{Intern; development \& analytics}} \hfill \textsl{Aug 2019 - Jun 2020}
+
+\vspace{4pt}
+
+\textbf{Cryptography and zero-knowledge proofs:}
+
+\vspace{2pt}
+
+\begin{addmargin}[0em]{10em}
+    \begin{itemize}
+        \setlength\itemsep{-2pt}
+        \item Developed a digital signature protocol resistant to owner classification
+        \item Designed and implemented Merkle tree zk-SNARK in \href{https://github.com/iden3/circom}{\color{blue}\textbf{Circom}} (JavaScript-based arithmetic circuits compiler) and \href{https://docs.rs/bellman/0.2.0/bellman/}{\color{blue}\textbf{bellman}} (Rust crate for building zk-SNARK circuits)
+    \end{itemize}
+\end{addmargin}
+
+\end{comment}
+
+%--------------- TEACHING EXPERIENCE ---------------
+
+% \section{Teaching experience}
+
+% {\large \textbf{School \textnumero 1514}} \hfill \textsl{Moscow, Russia} \\
+% {\small \textsl{Teaching assistant}} \hfill \textsl{Sep 2016 - Sep 2017} \\
+
+% \vspace{2pt}
+
+% \begin{addmargin}[0em]{10em}
+%     \begin{itemize}
+%         \setlength\itemsep{-2pt}
+%         \item Extra classes (physics)
+%     \end{itemize}
+% \end{addmargin}
+
+% \vspace{6pt}
+
+
+%--------------- PROGRAMMING SKILLS ---------------
+\section{Programming skills}
+
+\textbf{Languages and frameworks:}
+
+\vspace{2pt}
+
+\begin{addmargin}[0em]{10em}
+    \begin{itemize}
+        \setlength\itemsep{-2pt}
+        \item C/C++
+        \item Python (NumPy, SciPy, pandas, scikit-learn, PyTorch, Pyro)
+        \item Hadoop, Spark
+        \item \LaTeX
+    \end{itemize}
+\end{addmargin}
+
+\vspace{4pt}
+
+\textbf{Technologies:} bash, git, ssh
+
+%--------------- PROJECTS ---------------
+\section{Projects}
+
+\begin{itemize}
+    \setlength\itemsep{-2pt}
+    \item Yandex.Taxi trip status prediction
+    \href{https://github.com/polgrisha/ProjectsDS}{\large \color{blue}\ExternalLink}
+    
+    \item Data analysis of the bike rental system
+    \href{https://github.com/polgrisha/ProjectsDS}{\large \color{blue}\ExternalLink}
+    
+    \item Ion channels identification
+    (Kaggle competition)
+    \href{https://github.com/polgrisha/IonSwitchingKaggle}{\large \color{blue}\ExternalLink}
+    
+    \item Analytics for HobbyTaste (student startup) \href{https://github.com/HobbyTaste}{\large \color{blue}\ExternalLink}
+    
+    \item Usage of MCMC methods in deep learning (bachelor thesis)
+    
+    
+    
+
+\end{itemize}
+
+\end{document}
